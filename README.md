@@ -11,6 +11,7 @@
 1. touch <fname>.py
 1. edit <fname>.py
 1. colcon build --packages-select <pkg name> // build specified package solely.
+1. source install/local_setup.zsh
 1. ros2 run <pkg name> <executable name>
 ````
     entry_points={
@@ -26,4 +27,9 @@
 ````
 
 Additional: subscriber
+
+### python pkg w/ specified node (publisher)
+same as above except "ros2 pkg create"
+1. ros2 pkg create --build-type ament_python --node-name <node name> <pkg name>
+source file to implement node is created automatically.
 
