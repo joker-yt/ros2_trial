@@ -1,0 +1,36 @@
+[1.309s] Invoking command in '/home/tk/work/workcopy/ros2_trial/py_create_pkg/src/my_ros2_pkg': PYTHONPATH=/home/tk/work/workcopy/ros2_trial/py_create_pkg/build/my_ros2_pkg/prefix_override:/home/tk/work/workcopy/ros2_trial/py_create_pkg/install/my_ros2_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_ros2_pkg build --build-base /home/tk/work/workcopy/ros2_trial/py_create_pkg/build/my_ros2_pkg/build install --record /home/tk/work/workcopy/ros2_trial/py_create_pkg/build/my_ros2_pkg/install.log --single-version-externally-managed
+[1.790s] running egg_info
+[1.791s] creating ../../build/my_ros2_pkg/my_ros2_pkg.egg-info
+[1.791s] writing ../../build/my_ros2_pkg/my_ros2_pkg.egg-info/PKG-INFO
+[1.792s] writing dependency_links to ../../build/my_ros2_pkg/my_ros2_pkg.egg-info/dependency_links.txt
+[1.792s] writing entry points to ../../build/my_ros2_pkg/my_ros2_pkg.egg-info/entry_points.txt
+[1.792s] writing requirements to ../../build/my_ros2_pkg/my_ros2_pkg.egg-info/requires.txt
+[1.793s] writing top-level names to ../../build/my_ros2_pkg/my_ros2_pkg.egg-info/top_level.txt
+[1.793s] writing manifest file '../../build/my_ros2_pkg/my_ros2_pkg.egg-info/SOURCES.txt'
+[1.796s] reading manifest file '../../build/my_ros2_pkg/my_ros2_pkg.egg-info/SOURCES.txt'
+[1.797s] writing manifest file '../../build/my_ros2_pkg/my_ros2_pkg.egg-info/SOURCES.txt'
+[1.797s] running build
+[1.798s] running build_py
+[1.798s] creating /home/tk/work/workcopy/ros2_trial/py_create_pkg/build/my_ros2_pkg/build
+[1.798s] creating /home/tk/work/workcopy/ros2_trial/py_create_pkg/build/my_ros2_pkg/build/lib
+[1.799s] creating /home/tk/work/workcopy/ros2_trial/py_create_pkg/build/my_ros2_pkg/build/lib/my_ros2_pkg
+[1.799s] copying my_ros2_pkg/__init__.py -> /home/tk/work/workcopy/ros2_trial/py_create_pkg/build/my_ros2_pkg/build/lib/my_ros2_pkg
+[1.799s] copying my_ros2_pkg/my_ros2_pkg_pub.py -> /home/tk/work/workcopy/ros2_trial/py_create_pkg/build/my_ros2_pkg/build/lib/my_ros2_pkg
+[1.799s] running install
+[1.800s] running install_lib
+[1.801s] creating /home/tk/work/workcopy/ros2_trial/py_create_pkg/install/my_ros2_pkg/lib/python3.10/site-packages/my_ros2_pkg
+[1.801s] copying /home/tk/work/workcopy/ros2_trial/py_create_pkg/build/my_ros2_pkg/build/lib/my_ros2_pkg/__init__.py -> /home/tk/work/workcopy/ros2_trial/py_create_pkg/install/my_ros2_pkg/lib/python3.10/site-packages/my_ros2_pkg
+[1.802s] copying /home/tk/work/workcopy/ros2_trial/py_create_pkg/build/my_ros2_pkg/build/lib/my_ros2_pkg/my_ros2_pkg_pub.py -> /home/tk/work/workcopy/ros2_trial/py_create_pkg/install/my_ros2_pkg/lib/python3.10/site-packages/my_ros2_pkg
+[1.803s] byte-compiling /home/tk/work/workcopy/ros2_trial/py_create_pkg/install/my_ros2_pkg/lib/python3.10/site-packages/my_ros2_pkg/__init__.py to __init__.cpython-310.pyc
+[1.803s] byte-compiling /home/tk/work/workcopy/ros2_trial/py_create_pkg/install/my_ros2_pkg/lib/python3.10/site-packages/my_ros2_pkg/my_ros2_pkg_pub.py to my_ros2_pkg_pub.cpython-310.pyc
+[1.804s] running install_data
+[1.805s] creating /home/tk/work/workcopy/ros2_trial/py_create_pkg/install/my_ros2_pkg/share/ament_index
+[1.806s] creating /home/tk/work/workcopy/ros2_trial/py_create_pkg/install/my_ros2_pkg/share/ament_index/resource_index
+[1.806s] creating /home/tk/work/workcopy/ros2_trial/py_create_pkg/install/my_ros2_pkg/share/ament_index/resource_index/packages
+[1.806s] copying resource/my_ros2_pkg -> /home/tk/work/workcopy/ros2_trial/py_create_pkg/install/my_ros2_pkg/share/ament_index/resource_index/packages
+[1.806s] copying package.xml -> /home/tk/work/workcopy/ros2_trial/py_create_pkg/install/my_ros2_pkg/share/my_ros2_pkg
+[1.807s] running install_egg_info
+[1.809s] Copying ../../build/my_ros2_pkg/my_ros2_pkg.egg-info to /home/tk/work/workcopy/ros2_trial/py_create_pkg/install/my_ros2_pkg/lib/python3.10/site-packages/my_ros2_pkg-0.0.0-py3.10.egg-info
+[1.811s] running install_scripts
+[1.846s] writing list of installed files to '/home/tk/work/workcopy/ros2_trial/py_create_pkg/build/my_ros2_pkg/install.log'
+[1.898s] Invoked command in '/home/tk/work/workcopy/ros2_trial/py_create_pkg/src/my_ros2_pkg' returned '0': PYTHONPATH=/home/tk/work/workcopy/ros2_trial/py_create_pkg/build/my_ros2_pkg/prefix_override:/home/tk/work/workcopy/ros2_trial/py_create_pkg/install/my_ros2_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_ros2_pkg build --build-base /home/tk/work/workcopy/ros2_trial/py_create_pkg/build/my_ros2_pkg/build install --record /home/tk/work/workcopy/ros2_trial/py_create_pkg/build/my_ros2_pkg/install.log --single-version-externally-managed
