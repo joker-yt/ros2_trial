@@ -1,6 +1,7 @@
 # ros2_trial
 ## Standard workflow
 ### python pkg w/o specified node (publisher)
+![dir_structure_py_create_pkg.png](img/dir_structure_py_create_pkg.png)
 1. mkdir \<workspace\>
 1. cd \<workspace\>
 1. colcon --build
