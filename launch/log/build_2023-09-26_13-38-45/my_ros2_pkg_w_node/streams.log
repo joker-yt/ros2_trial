@@ -1,0 +1,25 @@
+[0.397s] Invoking command in '/home/yasuyukitakahashi/work/ros2_trial/launch/src/my_ros2_pkg_w_node': PYTHONPATH=/home/yasuyukitakahashi/work/ros2_trial/launch/build/my_ros2_pkg_w_node/prefix_override:/home/yasuyukitakahashi/work/ros2_trial/launch/install/my_ros2_pkg_w_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_ros2_pkg_w_node build --build-base /home/yasuyukitakahashi/work/ros2_trial/launch/build/my_ros2_pkg_w_node/build install --record /home/yasuyukitakahashi/work/ros2_trial/launch/build/my_ros2_pkg_w_node/install.log --single-version-externally-managed
+[0.549s] running egg_info
+[0.549s] writing ../../build/my_ros2_pkg_w_node/my_ros2_pkg_w_node.egg-info/PKG-INFO
+[0.549s] writing dependency_links to ../../build/my_ros2_pkg_w_node/my_ros2_pkg_w_node.egg-info/dependency_links.txt
+[0.549s] writing entry points to ../../build/my_ros2_pkg_w_node/my_ros2_pkg_w_node.egg-info/entry_points.txt
+[0.549s] writing requirements to ../../build/my_ros2_pkg_w_node/my_ros2_pkg_w_node.egg-info/requires.txt
+[0.550s] writing top-level names to ../../build/my_ros2_pkg_w_node/my_ros2_pkg_w_node.egg-info/top_level.txt
+[0.551s] reading manifest file '../../build/my_ros2_pkg_w_node/my_ros2_pkg_w_node.egg-info/SOURCES.txt'
+[0.551s] writing manifest file '../../build/my_ros2_pkg_w_node/my_ros2_pkg_w_node.egg-info/SOURCES.txt'
+[0.551s] running build
+[0.551s] running build_py
+[0.551s] running install
+[0.551s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.551s]   warnings.warn(
+[0.551s] running install_lib
+[0.552s] running install_data
+[0.552s] copying launch/test.launch.py -> /home/yasuyukitakahashi/work/ros2_trial/launch/install/my_ros2_pkg_w_node/share/my_ros2_pkg_w_node
+[0.553s] running install_egg_info
+[0.554s] removing '/home/yasuyukitakahashi/work/ros2_trial/launch/install/my_ros2_pkg_w_node/lib/python3.10/site-packages/my_ros2_pkg_w_node-0.0.0-py3.10.egg-info' (and everything under it)
+[0.554s] Copying ../../build/my_ros2_pkg_w_node/my_ros2_pkg_w_node.egg-info to /home/yasuyukitakahashi/work/ros2_trial/launch/install/my_ros2_pkg_w_node/lib/python3.10/site-packages/my_ros2_pkg_w_node-0.0.0-py3.10.egg-info
+[0.554s] running install_scripts
+[0.566s] Installing my_node_pub script to /home/yasuyukitakahashi/work/ros2_trial/launch/install/my_ros2_pkg_w_node/lib/my_ros2_pkg_w_node
+[0.566s] Installing my_node_sub script to /home/yasuyukitakahashi/work/ros2_trial/launch/install/my_ros2_pkg_w_node/lib/my_ros2_pkg_w_node
+[0.567s] writing list of installed files to '/home/yasuyukitakahashi/work/ros2_trial/launch/build/my_ros2_pkg_w_node/install.log'
+[0.580s] Invoked command in '/home/yasuyukitakahashi/work/ros2_trial/launch/src/my_ros2_pkg_w_node' returned '0': PYTHONPATH=/home/yasuyukitakahashi/work/ros2_trial/launch/build/my_ros2_pkg_w_node/prefix_override:/home/yasuyukitakahashi/work/ros2_trial/launch/install/my_ros2_pkg_w_node/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_ros2_pkg_w_node build --build-base /home/yasuyukitakahashi/work/ros2_trial/launch/build/my_ros2_pkg_w_node/build install --record /home/yasuyukitakahashi/work/ros2_trial/launch/build/my_ros2_pkg_w_node/install.log --single-version-externally-managed
