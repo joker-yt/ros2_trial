@@ -1,0 +1,6 @@
+<?xml version='1.0' ?>
+
+<launch>
+    <node pkg="my_ros2_pkg_w_node1" exec="my_node_pub1" output="screen"/>
+    <node pkg="my_ros2_pkg_w_node1" exec="my_node_sub1" output="screen"/>
+</launch>

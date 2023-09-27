@@ -1,0 +1,6 @@
+<launch>
+  <!-- Launch Node from Package A -->
+  <include file="$(find-pkg-share my_ros2_pkg_w_node1)/test.launch.xml"/>
+  <!-- Launch Node from Package B -->
+  <include file="$(find-pkg-share my_ros2_pkg_w_node2)/test.launch.xml"/>
+</launch>
