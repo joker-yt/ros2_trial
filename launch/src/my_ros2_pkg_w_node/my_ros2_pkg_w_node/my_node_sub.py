@@ -1,21 +1,24 @@
 import rclpy
 from std_msgs.msg import String
 
+class MySubscriber:
+    def __init__(self, node):
+        self.node = node
+        self.subscription = self.node.create_subscription(
+            String,
+            '/my_namespace/my_topic',
+            self.callback,
+            10
+        )
 
-def subscriber_node():
-    rclpy.init()
-    node = rclpy.create_node('subscriber_node')
-    subscriber = node.create_subscription(String, '/my_namespace/my_topic', callback, 10)
-    rclpy.spin(node)
-
-def callback(msg):
-    print('Received: %s' % msg.data)
+    def callback(self, msg):
+        self.node.get_logger().info('Received: %s' % msg.data)
 
 def main():
-    import threading
-    thread2 = threading.Thread(target=subscriber_node)
-    thread2.start()
-    thread2.join()
+    rclpy.init()
+    node = rclpy.create_node('subscriber_node')
+    subscriber = MySubscriber(node)
+    rclpy.spin(node)
 
 if __name__ == '__main__':
     main()
