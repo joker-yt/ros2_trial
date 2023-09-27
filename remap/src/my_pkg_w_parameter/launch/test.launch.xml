@@ -1,0 +1,14 @@
+<?xml version='1.0' ?>
+
+<launch>
+    <node pkg="my_pkg_w_parameter" exec="my_node_w_parameter" output="screen" >
+        <param name="my_parameter_int" value="456" />
+        <param name="my_parameter_string" value="def" />
+    </node>
+    <node pkg="my_pkg_w_parameter" exec="my_node_w_parameter" name="new_node" output="screen" >
+        <param name="my_parameter_int" value="789" />
+        <param name="my_parameter_string" value="ghi" />
+        <remap from="/default_namespace/default_topic" to="/modified_namespace/modified_topic" />
+    </node>
+    
+</launch>
