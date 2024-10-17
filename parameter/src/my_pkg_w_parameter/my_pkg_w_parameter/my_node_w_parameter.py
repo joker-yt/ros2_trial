@@ -1,23 +1,60 @@
 import rclpy
-from std_msgs.msg import String
+from rclpy.node import Node
+from rclpy.executors import MultiThreadedExecutor
+from std_msgs.msg import Empty
+import threading
 
-def main_node():
-    rclpy.init()
-    node = rclpy.create_node('main_node')
-    node.declare_parameter("my_parameter_int", 123)
-    node.declare_parameter("my_parameter_string", "abc")
+class MainNode(Node):
+    def __init__(self):
+        super().__init__('main_node')
+        self.declare_parameter("my_parameter_int", 123)
+        self.declare_parameter("my_parameter_string", "abc")
+        
+        # Set up a timer to periodically check and log parameter values
+        self.create_timer(2, self.timer_callback)
 
-    my_parameter_int = node.get_parameter("my_parameter_int").value
-    my_parameter_string = node.get_parameter("my_parameter_string").value
-    node.get_logger().info('parameters:: int:{0}'.format(my_parameter_int))
-    node.get_logger().info('parameters:: string:{0}'.format (my_parameter_string))
-    rclpy.spin_once(node)
+        # Subscribe to a shutdown topic
+        self.shutdown_subscription = self.create_subscription(
+            Empty,
+            'shutdown',
+            self.shutdown_callback,
+            10)
+        
+        self.get_logger().info("Node started. Publish to /shutdown topic to stop the node.")
+        
+        # Flag to indicate if the node should continue running
+        self.running = True
+
+    def timer_callback(self):
+        my_parameter_int = self.get_parameter("my_parameter_int").value
+        my_parameter_string = self.get_parameter("my_parameter_string").value
+        
+        self.get_logger().info(f'parameters:: int:{my_parameter_int}')
+        self.get_logger().info(f'parameters:: string:{my_parameter_string}')
+
+    def shutdown_callback(self, msg):
+        self.get_logger().info("Shutdown message received. Stopping the node...")
+        self.running = False
 
 def main():
-    import threading
-    thread1 = threading.Thread(target=main_node)
-    thread1.start()
-    thread1.join()
+    rclpy.init()
+    node = MainNode()
+    
+    executor = MultiThreadedExecutor()
+    executor.add_node(node)
+
+    # Use a separate thread for spinning
+    spin_thread = threading.Thread(target=executor.spin, daemon=True)
+    spin_thread.start()
+    
+    try:
+        while node.running:
+            pass
+    finally:
+        node.get_logger().info("Shutting down...")
+        executor.shutdown()
+        node.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
